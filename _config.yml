@@ -14,9 +14,9 @@ name                     : &name "Shreeram"
 description              : &description "Software Engineer | AI / ML Researcher | Guitarist"
 
 
-url                      : "https://shreeramgs.com"  # e.g., your custom domain
+url                      : "https://shreeramgs.github.io"  # GitHub Pages URL
 baseurl                  : ""                        # subpath (if any), otherwise blank
-repository               : "shreeramgs.com"          # can be your GH repo name or your domain
+repository               : "shreeramgs.github.io"    # GitHub repository name
 
 # Site Author
 author:
