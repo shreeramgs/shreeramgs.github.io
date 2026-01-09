@@ -8,24 +8,25 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Shreeram Gudemaranahalli Subramanya"
-title_separator          : "-"
-name                     : &name "Shreeram"
-description              : &description "Software Engineer | AI / ML Researcher | Guitarist"
+title                    : "Shreeram G. Subramanya"
+title_separator          : "|"
+name                     : &name "Shreeram G. Subramanya"
+description              : &description "Cross-Modal World Models | Computer Vision | Seeking PhD Opportunities"
 
 
 url                      : "https://shreeramgs.github.io"  # GitHub Pages URL
 baseurl                  : ""                        # subpath (if any), otherwise blank
-repository               : "shreeramgs.github.io"    # GitHub repository name
+repository               : "shreeramgs/shreeramgs.github.io"    # GitHub repository name
 
 # Site Author
 author:
   avatar           : "profile.jpg"
-  name             : "Shreeram Gudemaranahalli Subramanya"
+  name             : "Shreeram G. Subramanya"
   pronouns         : "he/him"
-  bio              : "AI SDE @ White Hack Labs, Data Scientist, Researcher @ CUBS Lab University at Buffalo"
-  location         : "Buffalo, New York"
-  employer         : "University @ Buffalo"
+  bio              : "Cross-Modal World Models • Computer Vision • MS Data Science @ UB • Seeking PhD"
+  location         : "Buffalo, NY"
+  employer         : "White Hack Labs"
+  email            : "shreeramgs666@gmail.com"
 
   # Academic websites
   arxiv            :
@@ -125,6 +126,7 @@ include:
   - .htaccess
   - _pages
   - files
+  - _headers
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

@@ -1,36 +1,48 @@
 ---
-title: "pneumonia_detector(Chest x_ray CNN)<br/><img src='/images/cnn_project.png'>"
-excerpt: "This application uses artificial neural network as a filter to classify the image. The output of the neural network is scaled so as to get the proper sizes of the images that are classified and can be used by radiologists to predict the abnormality up to a great extent.    
-"
+title: "Pneumonia Detection CNN"
+excerpt: "Deep learning model using ResNet-50 for automated pneumonia detection from chest X-ray images. Achieves high accuracy for assisting radiologists in diagnosis."
 collection: project
+image: "/images/cnn_project.png"
+tags:
+  - Computer Vision
+  - CNN
+  - Medical AI
+  - MXNet
+github: "https://github.com/shreeramgs/pneumonia_detector"
 ---
-# x_ray
-![alt text](image.png)
-```sh
-install comet-ml from pypi
-mxnet,gluoncv.
+
+# Pneumonia Detection from Chest X-Rays
+
+This application uses convolutional neural networks to classify chest X-ray images for pneumonia detection. The model assists radiologists in predicting abnormalities with high accuracy.
+
+## Model Architecture
+
+- **Base Model**: ResNet-50 (pretrained on ImageNet)
+- **Framework**: MXNet with GluonCV
+- **Transfer Learning**: Fine-tuned for medical imaging
+
+## Dataset
+
+[Kaggle Chest X-Ray Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+- Normal vs Pneumonia classification
+- Training, validation, and test splits
+
+## Setup
+
+```bash
+pip install mxnet-cu101
+pip install gluoncv
+pip install comet-ml
 ```
-Register at (https://www.comet.ml/site/?cache=62352245) here confusion matrix will be stored.
-Important::Change your api key which you will get after registraion under quick start guide with workspace given as active workspace 
-in this line of code.
-<experiment = Experiment(api_key="uVlCssu6MSf2jDhTxV9guqoDI",project_name="model",workspace="yatharth-123")>
 
-1.Libraries to be installed:
-```sh
-   pip install mxnet-cu101
-   pip install gluoncv
-```
-tutoials:
+## Features
 
-<https://gluon-cv.mxnet.io/build/examples_classification/transfer_learning_minc.html>
+- Automated X-ray classification
+- Confusion matrix visualization via Comet.ml
+- GPU acceleration support
+- Transfer learning from ImageNet
 
-kaggle-dataset:
+## References
 
-<https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia>
-
-About Resnet Model used in the project:
-<https://numpy.mxnet.io/api/gluon/_autogen/mxnet.gluon.model_zoo.vision.resnet50_v2.html>
-
-<https://github.com/KaimingHe/resnet-1k-layers>
-
-<https://arxiv.org/abs/1603.05027>
+- [ResNet Paper](https://arxiv.org/abs/1603.05027)
+- [GluonCV Transfer Learning Tutorial](https://gluon-cv.mxnet.io/build/examples_classification/transfer_learning_minc.html)

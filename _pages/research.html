@@ -7,8 +7,34 @@ author_profile: true
 
 {% include base_path %}
 
+<p>My research explores <strong>cross-modal world models</strong>—AI systems that learn physical properties through prediction discrepancy across modalities.</p>
+
+<h2>Research Areas</h2>
+
+<div style="margin-bottom: 2rem;">
+  <h3><i class="fas fa-globe" style="color: #3d9da2;"></i> Cross-Modal World Models</h3>
+  <p>Learning physical properties through prediction error. When a system predicts the deformation that should accompany applied pressure and observes a mismatch, that error reveals material properties that neither modality encodes alone.</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+  <h3><i class="fas fa-volume-up" style="color: #7b68ee;"></i> Audio-Visual Learning</h3>
+  <p>Bidirectional prediction (motion→sound, sound→motion) for material property inference. Zero-shot transfer to material classification without fine-tuning.</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+  <h3><i class="fas fa-video" style="color: #d4a03c;"></i> Video Understanding</h3>
+  <p>Temporal cross-modal prediction for action dynamics. Train models to predict: given current visual state + action, what sound/visual change occurs?</p>
+</div>
+
+<div style="margin-bottom: 2rem;">
+  <h3><i class="fas fa-shield-alt" style="color: #e07a5f;"></i> Authenticity Verification</h3>
+  <p>Using cross-modal prediction error as anomaly detector for AI-generated content. Authentic content produces consistent cross-modal signatures; synthetic content fails physical consistency checks.</p>
+</div>
+
+<hr>
+
+<h2>Research Projects</h2>
 
 {% for post in site.research %}
   {% include archive-single.html %}
 {% endfor %}
-

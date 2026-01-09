@@ -7,31 +7,43 @@ author_profile: true
 
 {% include base_path %}
 
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+A list of all pages and content on this site. For robots, an [XML version]({{ base_path }}/sitemap.xml) is available.
 
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
+## Main Pages
+
+- [Home]({{ base_path }}/) - About me and research overview
+- [About]({{ base_path }}/about/) - Detailed background and experience
+- [Publications]({{ base_path }}/publications/) - Academic publications
+- [Research]({{ base_path }}/research/) - Research projects and interests
+- [Projects]({{ base_path }}/projects/) - Software and engineering projects
+- [Blog]({{ base_path }}/blog/) - Blog posts and articles
+- [CV]({{ base_path }}/files/shreeram_gs%20Resume.pdf) - Curriculum Vitae
+
+## Browse By
+
+- [Categories]({{ base_path }}/categories/) - Posts organized by category
+- [Tags]({{ base_path }}/tags/) - Posts organized by tag
+
+## Publications
+
+{% for post in site.publications %}
+- [{{ post.title | strip_html }}]({{ base_path }}{{ post.url }})
 {% endfor %}
 
-<h2>Posts</h2>
+## Research
+
+{% for post in site.research %}
+- [{{ post.title | strip_html }}]({{ base_path }}{{ post.url }})
+{% endfor %}
+
+## Projects
+
+{% for post in site.project %}
+- [{{ post.title | strip_html }}]({{ base_path }}{{ post.url }})
+{% endfor %}
+
+## Blog Posts
+
 {% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
+- [{{ post.title }}]({{ base_path }}{{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}

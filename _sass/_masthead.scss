@@ -3,40 +3,43 @@
    ========================================================================== */
 
 .masthead {
-  position: fixed;
-  background: white;
-  border-bottom: 1px solid $border-color;
-  height: $masthead-height;
+  position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-
+  z-index: 20;
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
-  z-index: 20;
 
   &__inner-wrap {
-    @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 1em;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
-
-    nav {
-      z-index: 10;
-    }
-
-    a {
-      text-decoration: none;
-    }
   }
 }
 
 .masthead__menu {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
 
   ul {
     margin: 0;
@@ -47,12 +50,19 @@
 }
 
 .masthead__menu-item {
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+
+  a {
+    display: block;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
 
   &--lg {
-    padding-right: 2em;
-    font-weight: 700;
+    a {
+      font-weight: bold;
+    }
   }
 }

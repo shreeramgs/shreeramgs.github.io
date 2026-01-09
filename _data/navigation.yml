@@ -1,29 +1,21 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# Navigation - Optimized for Academic Portfolio
+# The order here determines the order in the header navigation
 
 main:
+  - title: "About"
+    url: /about/
 
   - title: "Publications"
     url: /publications/
     
   - title: "Research"
     url: /research/
-  # - title: "Talks"
-  #   url: /talks/    
 
-  # - title: "Teaching"
-  #   url: /teaching/   
   - title: "Projects"
     url: /projects/
-    
-  - title: "Blogs"
-    url: /year-archive/
+
+  - title: "Blog"
+    url: /blog/
     
   - title: "CV"
     url: /files/shreeram_gs Resume.pdf
-    
-  # - title: "Guide"
-  #   url: /markdown/
