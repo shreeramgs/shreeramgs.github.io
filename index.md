@@ -12,12 +12,12 @@ I'm actively seeking **PhD opportunities** in Computer Vision, focusing on **cro
 <div class="news-section">
 <h2><i class="fas fa-newspaper"></i> News</h2>
 <ul class="news-list">
-  <li><span class="news-date">Jan 2025</span> <strong>Seeking PhD positions</strong> for Fall 2025 in Computer Vision / Cross-Modal Learning</li>
-  <li><span class="news-date">May 2024</span> Paper <strong>"GestSpoof"</strong> published at <strong>IEEE FG 2024</strong> in Istanbul, Turkey</li>
-  <li><span class="news-date">May 2024</span> Graduated with <strong>MS in Data Science</strong> from University at Buffalo</li>
-  <li><span class="news-date">Feb 2024</span> Released <strong>GestSpoof Dataset</strong> for fingerprint presentation attack detection research</li>
-  <li><span class="news-date">Jan 2024</span> Joined <strong>White Hack Labs</strong> as Software Engineer, building HackerGPT</li>
-  <li><span class="news-date">2023</span> Completed Research Assistantship at <strong>CUBS Lab</strong>, University at Buffalo</li>
+  <li><span class="news-date">Currently</span> Seeking PhD opportunities in Computer Vision / Cross-Modal Learning for Fall 2026 intake.</li>
+  <li><span class="news-date">May 2024</span> Presented and published <strong>"GestSpoof"</strong> at <strong>IEEE FG 2024</strong> in Istanbul, Turkey</li>
+  <li><span class="news-date">Apr 2024</span> Released <strong>GestSpoof Dataset</strong> for fingerprint presentation attack detection research</li>
+  <li><span class="news-date">Nov 2023</span> Joined <strong>White Hack Labs</strong> as Software Engineer, working on HackerGPT</li>
+  <li><span class="news-date">Feb 2023 – Nov 2023</span> Completed Research Assistantship at <strong>CUBS Lab</strong>, University at Buffalo</li>
+  <li><span class="news-date">Feb 2023</span> Graduated with <strong>MS in Data Science</strong> from University at Buffalo</li>
 </ul>
 </div>
 
@@ -59,17 +59,28 @@ A novel approach using cross-modal prediction—learning that prediction error b
 
 I propose developing **cross-modal world models** that learn physical properties through prediction discrepancy. The core insight from my GestSpoof work: when a system predicts the deformation that should accompany applied pressure and observes a mismatch, that error reveals physical properties—elasticity, hardness, material authenticity—that neither modality encodes alone.
 
-<div class="research-aims">
-
-**Aim 1: Bidirectional Audio-Visual World Models**  
-Extending motion→sound AND sound→motion prediction for material property inference.
-
-**Aim 2: Temporal Cross-Modal Prediction**  
-Learning action dynamics through cross-modal consistency over time.
-
-**Aim 3: Authenticity Verification**  
-Using prediction error as anomaly detector for AI-generated content.
-
+<div class="research-aims-card" style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 2rem 0;">
+  <div class="aim-card" style="flex: 1 1 220px; min-width: 220px; background: #f9fafb; border-radius: 14px; box-shadow: 0 2px 10px rgba(30,41,59,0.06); padding: 1.5rem 1.25rem; margin-bottom: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
+    <div class="aim-icon" style="font-size: 1.6em; color: #38bdf8; margin-bottom: 0.5rem;"><i class="fas fa-arrows-alt-h"></i></div>
+    <div class="aim-title" style="font-weight: 600; font-size: 1.08rem; margin-bottom: 0.4rem;">Aim 1: Bidirectional Audio-Visual World Models</div>
+    <div class="aim-desc" style="color: #374151; font-size: 1rem;">
+      Extending motion→sound <b>and</b> sound→motion prediction for material property inference.
+    </div>
+  </div>
+  <div class="aim-card" style="flex: 1 1 220px; min-width: 220px; background: #f9fafb; border-radius: 14px; box-shadow: 0 2px 10px rgba(30,41,59,0.06); padding: 1.5rem 1.25rem; margin-bottom: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
+    <div class="aim-icon" style="font-size: 1.6em; color: #a78bfa; margin-bottom: 0.5rem;"><i class="fas fa-clock"></i></div>
+    <div class="aim-title" style="font-weight: 600; font-size: 1.08rem; margin-bottom: 0.4rem;">Aim 2: Temporal Cross-Modal Prediction</div>
+    <div class="aim-desc" style="color: #374151; font-size: 1rem;">
+      Learning action dynamics through cross-modal consistency over time.
+    </div>
+  </div>
+  <div class="aim-card" style="flex: 1 1 220px; min-width: 220px; background: #f9fafb; border-radius: 14px; box-shadow: 0 2px 10px rgba(30,41,59,0.06); padding: 1.5rem 1.25rem; margin-bottom: 1rem; display: flex; flex-direction: column; align-items: flex-start;">
+    <div class="aim-icon" style="font-size: 1.6em; color: #fbbf24; margin-bottom: 0.5rem;"><i class="fas fa-shield-alt"></i></div>
+    <div class="aim-title" style="font-weight: 600; font-size: 1.08rem; margin-bottom: 0.4rem;">Aim 3: Authenticity Verification</div>
+    <div class="aim-desc" style="color: #374151; font-size: 1rem;">
+      Using prediction error as anomaly detector for AI-generated content.
+    </div>
+  </div>
 </div>
 
 ---
@@ -81,7 +92,7 @@ Using prediction error as anomaly detector for AI-generated content.
 <div class="education-item">
 <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
 <div class="edu-content">
-<strong>M.S. in Data Science</strong>, 2024<br>
+<strong>M.S. in Data Science</strong>, 2023<br>
 <span class="edu-school">University at Buffalo, SUNY</span>
 </div>
 </div>
@@ -89,7 +100,7 @@ Using prediction error as anomaly detector for AI-generated content.
 <div class="education-item">
 <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
 <div class="edu-content">
-<strong>B.E. in Computer Science</strong>, 2022<br>
+<strong>B.E. in Computer Science</strong>, 2020<br>
 <span class="edu-school">The National Institute of Engineering, Mysore</span>
 </div>
 </div>
@@ -103,18 +114,32 @@ Using prediction error as anomaly detector for AI-generated content.
 <div class="experience-section">
 
 <div class="experience-item">
-<div class="exp-period">2024 – Present</div>
+  <div class="exp-period">November 2023 – Present</div>
+  <div class="exp-content">
+    <strong>Software Engineer</strong> @ White Hack Labs<br>
+    <span class="exp-desc">
+      • Working on <a href="https://hackergpt.app/" target="_blank" rel="noopener">HackerGPT</a>, an AI-driven security platform serving over <strong>10,000 users</strong><br>
+      • Designed <strong>Breach Outreach CRM</strong>: platform designed to bridge the gap between data breach discovery and proactive cybersecurity outreach. It identifies compromised organizations and streamlines communication with key stakeholders to facilitate rapid incident response and penetration testing.
+    </span>
+  </div>
+</div>
+
+
+<div class="experience-item">
+<div class="exp-period">February 2023 – November 2023</div>
 <div class="exp-content">
-<strong>Software Engineer</strong> @ White Hack Labs<br>
-<span class="exp-desc">Building HackerGPT, an AI-driven security platform serving 10,000+ users</span>
+<strong>Research Assistant</strong> @ CUBS Lab, University at Buffalo<br>
+<span class="exp-desc">Developed GestSpoof framework for fingerprint presentation attack detection</span>
 </div>
 </div>
 
 <div class="experience-item">
-<div class="exp-period">2023 – 2024</div>
+<div class="exp-period">March 2020 – July 2021</div>
 <div class="exp-content">
-<strong>Research Assistant</strong> @ CUBS Lab, University at Buffalo<br>
-<span class="exp-desc">Developed GestSpoof framework for fingerprint presentation attack detection</span>
+<strong>Data Consultant</strong> @ Cognitron Technologies<br>
+<span class="exp-desc">
+  Worked on developing Educational CRM platform to boost student enrollment in public schools.
+</span>
 </div>
 </div>
 
