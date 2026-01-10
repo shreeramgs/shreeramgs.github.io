@@ -3,7 +3,6 @@ layout: single
 author_profile: true
 ---
 
-# Biography
 
 I am a software engineer at [White Hack Labs](https://whitehacklabs.com/) in New York, building AI-driven security tools for [HackerGPT](https://hackergpt.app/)—a platform serving **10,000+ users**. I completed my **Master's in Data Science** from the [University at Buffalo](https://www.buffalo.edu/) and worked as a Research Assistant at the [Center for Unified Biometrics and Sensors (CUBS) Lab](https://www.buffalo.edu/cubs.html) under Prof. Srirangaraj Setlur.
 
