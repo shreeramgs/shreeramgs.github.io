@@ -1,0 +1,89 @@
+# YouTube tutorial playlist: https://www.youtube.com/playlist?list=PLBRuTs27JRaM
+playlist_url: "https://www.youtube.com/playlist?list=PLBRuTs27JRaM"
+playlist_title: "Cybersecurity Tutorials & CTF Walkthroughs"
+
+videos:
+  - youtube_id: "0mkuySnpx68"
+    title: "Learn SQL Injection by Solving Real CTF Challenge"
+    tags:
+      - SQL Injection
+      - CTF
+
+  - youtube_id: "S1VQiFJege0"
+    title: "HackerGPT vs NoSQL Injection Challenge"
+    tags:
+      - NoSQL Injection
+      - HackerGPT
+      - CTF
+
+  - youtube_id: "_zTrEF0B880"
+    title: "Cross-Site Scripting (XSS) CTF Walkthrough: DOM, Reflected & Stored XSS Explained"
+    tags:
+      - XSS
+      - CTF
+
+  - youtube_id: "kWB2Qvr0-uA"
+    title: "CyberGym Challenge: Find Confidential Document"
+    tags:
+      - CyberGym
+      - CTF
+
+  - youtube_id: "hcWUmnjP7mU"
+    title: "CyberGym Challenge: Email Leak"
+    tags:
+      - CyberGym
+      - CTF
+
+  - youtube_id: "GTVLV_goZzo"
+    title: "CyberGym Challenge: Exposed Credentials Final"
+    tags:
+      - CyberGym
+      - CTF
+
+  - youtube_id: "aCsUrP2IyGE"
+    title: "CyberGym Challenge: Forgotten Developer Backup"
+    tags:
+      - CyberGym
+      - CTF
+
+  - youtube_id: "7fqOzVpsMm0"
+    title: "CyberGym Challenge: Retrieve Blueprint"
+    tags:
+      - CyberGym
+      - CTF
+
+  - youtube_id: "yOXncuwokRw"
+    title: "CyberGym Challenge: Reset Uvogin's Password"
+    tags:
+      - CyberGym
+      - CTF
+
+  - youtube_id: "7Pv8xEtDMjw"
+    title: "HackerGPT Solves yet another CTF: NFT Takeover"
+    tags:
+      - HackerGPT
+      - CTF
+
+  - youtube_id: "4Su2eL8jpuc"
+    title: "HackerGPT Solves CTFs"
+    tags:
+      - HackerGPT
+      - CTF
+
+  - youtube_id: "LMQl4ItE0ZM"
+    title: "HackerGPT Solves CTFs: Confidential Document Challenge"
+    tags:
+      - HackerGPT
+      - CTF
+
+  - youtube_id: "M7HI0fHcAoA"
+    title: "CyberGym Challenge: Visual Geo Stalking"
+    tags:
+      - CyberGym
+      - CTF
+
+  - youtube_id: "i7VPBIn_4qI"
+    title: "HackerGPT Solves yet another CTF: Login McSafeSearch"
+    tags:
+      - HackerGPT
+      - CTF

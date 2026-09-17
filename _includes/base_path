@@ -1,4 +1,16 @@
-{% if site.url %}
+{% comment %}
+  Use relative URLs when serving locally. `jekyll serve --host 0.0.0.0`
+  rewrites site.url to http://0.0.0.0:4000, which browsers cannot load.
+{% endcomment %}
+{% assign local_url = false %}
+{% if jekyll.environment == "development" %}{% assign local_url = true %}{% endif %}
+{% if site.url contains "0.0.0.0" %}{% assign local_url = true %}{% endif %}
+{% if site.url contains "127.0.0.1" %}{% assign local_url = true %}{% endif %}
+{% if site.url contains "localhost" %}{% assign local_url = true %}{% endif %}
+
+{% if local_url %}
+  {% assign base_path = site.baseurl %}
+{% elsif site.url %}
   {% assign base_path = site.url | append: site.baseurl %}
 {% else %}
   {% assign base_path = site.github.url %}

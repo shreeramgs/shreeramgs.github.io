@@ -16,7 +16,7 @@ A list of all pages and content on this site. For robots, an [XML version]({{ ba
 - [Publications]({{ base_path }}/publications/) - Academic publications
 - [Research]({{ base_path }}/research/) - Research projects and interests
 - [Projects]({{ base_path }}/projects/) - Software and engineering projects
-- [Blog]({{ base_path }}/blog/) - Blog posts and articles
+- [Media]({{ base_path }}/blog/) - Video tutorials and written articles
 - [CV]({{ base_path }}/files/shreeram_gs%20Resume.pdf) - Curriculum Vitae
 
 ## Browse By
@@ -42,7 +42,13 @@ A list of all pages and content on this site. For robots, an [XML version]({{ ba
 - [{{ post.title | strip_html }}]({{ base_path }}{{ post.url }})
 {% endfor %}
 
-## Blog Posts
+## Video Tutorials
+
+{% for tutorial in site.data.tutorials.videos %}
+- [{{ tutorial.title }}](https://www.youtube.com/watch?v={{ tutorial.youtube_id }})
+{% endfor %}
+
+## Articles
 
 {% for post in site.posts %}
 - [{{ post.title }}]({{ base_path }}{{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}

@@ -1,0 +1,38 @@
+{% include base_path %}
+
+<div class="tutorial-card">
+  <article class="tutorial-card__inner" itemscope itemtype="http://schema.org/VideoObject">
+    <meta itemprop="name" content="{{ include.tutorial.title }}">
+    <meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/{{ include.tutorial.youtube_id }}/maxresdefault.jpg">
+    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/{{ include.tutorial.youtube_id }}">
+
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube.com/embed/{{ include.tutorial.youtube_id }}"
+        title="{{ include.tutorial.title }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="tutorial-card__content">
+      <h3 class="tutorial-card__title" itemprop="headline">
+        <a href="https://www.youtube.com/watch?v={{ include.tutorial.youtube_id }}" target="_blank" rel="noopener">
+          {{ include.tutorial.title }}
+          <i class="fab fa-youtube tutorial-card__youtube" aria-hidden="true"></i>
+        </a>
+      </h3>
+
+      {% if include.tutorial.tags %}
+        <div class="tutorial-card__tags">
+          {% for tag in include.tutorial.tags limit:3 %}
+            <span class="tutorial-card__tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </article>
+</div>

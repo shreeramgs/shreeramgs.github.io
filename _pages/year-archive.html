@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /blog/
-title: "Blog"
+title: "Media"
 author_profile: true
 redirect_from:
   - /year-archive/
@@ -10,12 +10,37 @@ redirect_from:
 ---
 
 {% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+
+<p class="media-page__intro">
+  Articles, video tutorials, and walkthroughs on cybersecurity, AI security, and CTF challenges.
+</p>
+
+<section class="tutorials-section">
+  <h2 class="archive__subtitle"><i class="fab fa-youtube"></i> Video Tutorials</h2>
+  <p class="tutorials-section__intro">
+    Step-by-step cybersecurity tutorials and CTF walkthroughs.
+    <a href="{{ site.data.tutorials.playlist_url }}" target="_blank" rel="noopener">
+      Watch the full playlist on YouTube <i class="fas fa-external-link-alt"></i>
+    </a>
+  </p>
+
+  <div class="tutorials-grid">
+    {% for tutorial in site.data.tutorials.videos %}
+      {% include tutorial-card.html tutorial=tutorial %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="articles-section">
+  <h2 class="archive__subtitle"><i class="fas fa-newspaper"></i> Articles</h2>
+
+  {% capture written_year %}'None'{% endcapture %}
+  {% for post in site.posts %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% if year != written_year %}
+      <h3 id="{{ year | slugify }}" class="archive__year">{{ year }}</h3>
+      {% capture written_year %}{{ year }}{% endcapture %}
+    {% endif %}
+    {% include archive-single.html %}
+  {% endfor %}
+</section>
