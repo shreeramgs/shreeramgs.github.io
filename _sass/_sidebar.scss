@@ -10,22 +10,6 @@
   @include clearfix();
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
-    float: left;
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
-  }
-
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
@@ -286,7 +270,6 @@
   @include breakpoint($large) {
     position: sticky;
     top: 80px;
-    float: left;
   }
 }
 

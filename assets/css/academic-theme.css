@@ -29,6 +29,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -41,12 +43,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
-/* Prevent horizontal scroll */
 html, body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -109,9 +108,9 @@ p {
 }
 
 .masthead__inner-wrap {
-  max-width: 1200px !important;
+  max-width: min(80rem, 100%) !important;
   margin: 0 auto !important;
-  padding: 0.75rem 1.5rem !important;
+  padding: 0.75rem clamp(1rem, 3vw, 2rem) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
@@ -347,20 +346,57 @@ p {
 
 #main {
   flex: 1 0 auto;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
   width: 100%;
+  max-width: min(80rem, 100%);
+  margin: 0 auto;
+  padding: 2rem clamp(1rem, 3vw, 2rem);
+  box-sizing: border-box;
 }
 
-.page {
+.page,
+.archive {
+  min-width: 0;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 .page__inner-wrap {
   max-width: 100%;
-  overflow-x: hidden;
+}
+
+/* Desktop: sidebar + content share one row and fill leftover width.
+   Replaces the old float/Susy 10-of-12 + suffix padding that left a
+   blank column (and wrapped the article below the sidebar at 100% zoom). */
+@media (min-width: 64em) {
+  #main {
+    display: grid;
+    grid-template-columns: minmax(14rem, 16.5rem) minmax(0, 1fr);
+    column-gap: clamp(1.75rem, 3vw, 3rem);
+    align-items: start;
+  }
+
+  .sidebar,
+  .sidebar.sticky {
+    float: none !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .page,
+  .archive,
+  .page__inner-wrap {
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .list__item {
+    padding-right: 0 !important;
+  }
 }
 
 /* Fix for inline style grids */
@@ -667,9 +703,9 @@ body {
 }
 
 .page__footer footer {
-  max-width: 1200px;
+  max-width: min(80rem, 100%);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 clamp(1rem, 3vw, 2rem);
   text-align: center;
 }
 
@@ -974,8 +1010,8 @@ blockquote p:last-child {
    Responsive - Mobile First Approach
    ========================================================================== */
 
-/* Tablet and below */
-@media (max-width: 1024px) {
+/* Tablet and below — 63.99em so 64em desktop grid is not overridden */
+@media (max-width: 63.99em) {
   #main {
     display: block !important;
   }
@@ -993,11 +1029,13 @@ blockquote p:last-child {
     top: auto !important;
   }
   
-  .page {
+  .page,
+  .archive {
     float: none !important;
     width: 100% !important;
     margin-left: 0 !important;
     padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   
   .author__avatar {
